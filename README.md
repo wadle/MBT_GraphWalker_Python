@@ -49,32 +49,32 @@ For Test result we are used GW getstat see http://graphwalker.github.io/rest-get
 
 # Design your model
 
-Design a Model: Graph Editing (yED open source tool)see https://www.yworks.com/products/yed and http://graphwalker.github.io/Model_design/
+1. Using Graph Editing (yED open source tool)see https://www.yworks.com/products/yed and http://graphwalker.github.io/Model_design/
 
-Verify designed model:
+2. Verify model see http://graphwalker.github.io/cli-check/#check:
 
 $ gw3 check -m ~/resources/LoginParametrize/LoginParametrized.graphml "random(edge_coverage(10))"
 
 It will prompt : No issues found with the model(s) if model is correct.
 
-Generate source code: 
+3. Generate source code see http://graphwalker.github.io/cli-source/#examples:
 
 $ gw3 source -i model_name.graphml python.template >> model_name.py
 
-It will create python source code file with name model_name.py, it will contains:
+It will create python source code file with name model_name.py : Functions as per designed Edges and Vertices as per provided nomenclature for understanding, we are added prefix e_ and v_ before edges/vertices names 
 
-Functions as per designed Edges and Vertices as your nomenclature, for understanding we are added prefix e_ and v_ before edges/vertices names 
+4. Start GraphWalker server see http://graphwalker.github.io/rest-overview/#command-line-example
 
-Start GraphWalker server 
+5. Run model file and 
 
-Run model file 
+6. fetch result see http://graphwalker.github.io/rest-getstatistics/#getstatistics 
 
 # For parameterization : 
 
 If you need to access or change data in the model, we can use the REST calls getData and setData. See http://graphwalker.github.io/rest-getdata/#getData and http://graphwalker.github.io/rest-setdata  # /#setData and http://graphwalker.github.io/tests_parametrisation/
 Here we are used GW gaurd feature.
 
-# Multiple model:
+# Multiple models:
 
 We Are you using REST, http://graphwalker.github.io/rest-overview/,  when running the tests? If so, start, the graphwalker rest service with --verbose or -o options.
 
@@ -98,7 +98,7 @@ We can generate test cases offline using
 
 $ gw3 offline  --model model_name.graphml "random(edge_coverage(100))"
 
-# GraphWalker tool is provided GraphWalker Studio  
+# GraphWalker tool is provided GraphWalker Studio see https://github.com/GraphWalker/graphwalker-project/tree/master/graphwalker-studio
 
 Simple steps to start GraphWalker studio:
 See http://graphwalker.github.io/download/#standalone-jar and Download the jar "Latest development standalone Studio - 4.0.0-SNAPSHOT" and 
