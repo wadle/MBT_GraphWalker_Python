@@ -20,7 +20,7 @@ Create shortcut for GW standalone server see http://graphwalker.github.io/cli-ov
 
 Install virtualenv via pip:
 
-Terminal 1 : 
+On Terminal 1 : 
 
 $ pip install virtualenv
 
@@ -34,11 +34,11 @@ Set PYTHONPATH
 
 (env_name) xxx $ export PYTHONPATH=`pwd`
 
-Terminal 2 : Start Graphwalker server
+On Terminal 2 : Start Graphwalker server
 
-$ gw3 --debug all online  --service RESTFUL -m  ~/resources/LoginParametrize/LoginParametrized.graphml “random(edge_coverage(100))”
+ $ gw3 --debug all online  --service RESTFUL -m  ~/resources/LoginParametrize/LoginParametrized.graphml “random(edge_coverage(100))”
 
-Terminal 1 : Run model file
+On Terminal 1 : Run model file
 
 (env_name) xxx $ python ~/tests/LoginParametrizedDemo.py 
 
@@ -47,21 +47,22 @@ For test result:
 For Test result we are used GW getstat see http://graphwalker.github.io/rest-getstatistics/
 (see http://graphwalker.github.io/cli-source/#examples)
 
-# Design your model
+# Design your own model
 
 1. Using Graph Editing (yED open source tool)see https://www.yworks.com/products/yed and http://graphwalker.github.io/Model_design/
 
 2. Verify model see http://graphwalker.github.io/cli-check/#check:
 
-$ gw3 check -m ~/resources/LoginParametrize/LoginParametrized.graphml "random(edge_coverage(10))"
+  $ gw3 check -m ~/resources/LoginParametrize/LoginParametrized.graphml "random(edge_coverage(10))"
 
 It will prompt : No issues found with the model(s) if model is correct.
 
 3. Generate source code see http://graphwalker.github.io/cli-source/#examples:
 
-$ gw3 source -i model_name.graphml python.template >> model_name.py
+  $ gw3 source -i model_name.graphml python.template >> model_name.py
 
-It will create python source code file with name model_name.py : Functions as per designed Edges and Vertices as per provided nomenclature for understanding, we are added prefix e_ and v_ before edges/vertices names 
+  It will create python source code file with name model_name.py : Functions as per designed Edges and Vertices as per  
+  provided nomenclature for understanding, we are added prefix e_ and v_ before edges/vertices names 
 
 4. Start GraphWalker server see http://graphwalker.github.io/rest-overview/#command-line-example
 
@@ -78,7 +79,7 @@ Here we are used GW gaurd feature.
 
 We Are you using REST, http://graphwalker.github.io/rest-overview/,  when running the tests? If so, start, the graphwalker rest service with --verbose or -o options.
 
-$ gw3 -d all online -s RESTFUL -o -m m1.graphml "random(edge_coverage(100))" -m m2.graphml "random(edge_coverage(100))"
+ $ gw3 -d all online -s RESTFUL -o -m m1.graphml "random(edge_coverage(100))" -m m2.graphml "random(edge_coverage(100))"
 
 It will output the model name as well as the element name for every getNext request. The model name will represent the class in which you'll find the method (element) to call.
 
@@ -96,7 +97,7 @@ see http://graphwalker.github.io/features/#path-generation
 
 We can generate test cases offline using
 
-$ gw3 offline  --model model_name.graphml "random(edge_coverage(100))"
+ $ gw3 offline  --model model_name.graphml "random(edge_coverage(100))"
 
 # GraphWalker tool is provided GraphWalker Studio see https://github.com/GraphWalker/graphwalker-project/tree/master/graphwalker-studio
 
