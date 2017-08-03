@@ -32,7 +32,7 @@ $ source ~/env_name/bin/activate
 
 Set PYTHONPATH 
 
-(env_name) xxx $ export PYTHONPATH=`pwd`
+(env_name) xxx $ export PYTHONPATH=`pwd` or see https://askubuntu.com/questions/250929/pythonpath-environment-variable
 
 On Terminal 2 : Start Graphwalker server
 
