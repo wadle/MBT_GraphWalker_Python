@@ -53,16 +53,16 @@ For Test result we are used GW getstat see http://graphwalker.github.io/rest-get
 
 2. Verify model see http://graphwalker.github.io/cli-check/#check:
 
-  $ gw3 check -m ~/resources/LoginParametrize/LoginParametrized.graphml "random(edge_coverage(10))"
+   $ gw3 check -m ~/resources/LoginParametrize/LoginParametrized.graphml "random(edge_coverage(10))"
 
-It will prompt : No issues found with the model(s) if model is correct.
+   It will prompt : No issues found with the model(s) if model is correct.
 
 3. Generate source code see http://graphwalker.github.io/cli-source/#examples:
 
-  $ gw3 source -i model_name.graphml python.template >> model_name.py
+   $ gw3 source -i model_name.graphml python.template >> model_name.py
 
-  It will create python source code file with name model_name.py : Functions as per designed Edges and Vertices as per  
-  provided nomenclature for understanding, we are added prefix e_ and v_ before edges/vertices names 
+   It will create python source code file with name model_name.py : Functions as per designed Edges and Vertices as per  
+   provided nomenclature for understanding, we are added prefix e_ and v_ before edges/vertices names 
 
 4. Start GraphWalker server see http://graphwalker.github.io/rest-overview/#command-line-example
 
