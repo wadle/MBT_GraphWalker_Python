@@ -99,7 +99,8 @@ We can generate test cases offline using
 
  $ gw3 offline  --model model_name.graphml "random(edge_coverage(100))"
 
-# GraphWalker tool is provided GraphWalker Studio see https://github.com/GraphWalker/graphwalker-project/tree/master/graphwalker-studio
+# GraphWalker tool is provided GraphWalker Studio 
+see https://github.com/GraphWalker/graphwalker-project/tree/master/graphwalker-studio
 
 Simple steps to start GraphWalker studio:
 See http://graphwalker.github.io/download/#standalone-jar and Download the jar "Latest development standalone Studio - 4.0.0-SNAPSHOT" and 
