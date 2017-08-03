@@ -12,7 +12,7 @@ What GraphWalker does not do (see http://graphwalker.github.io/features/#what-gr
 
 2. Graph Editing (yED open source tool)see https://www.yworks.com/products/yed
 
-# Quickstart
+# QuickStart
 
 Download GW standalone server see http://graphwalker.github.io/download/ we are used GW version 3.4 or http://graphwalker.github.io/content/archive/graphwalker-cli-3.4.2.jar
 
