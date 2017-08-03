@@ -68,7 +68,7 @@ For Test result we are used GW getstat see http://graphwalker.github.io/rest-get
 
 5. Run model file and 
 
-6. fetch result see http://graphwalker.github.io/rest-getstatistics/#getstatistics 
+6. Fetch result stats see http://graphwalker.github.io/rest-getstatistics/#getstatistics 
 
 # For parameterization : 
 
