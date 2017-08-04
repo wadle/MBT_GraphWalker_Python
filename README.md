@@ -115,7 +115,7 @@ Currently, We can use GraphWalker Studio as:
 
 2. Graphical representation of path generation 
 
-3. Able to see, how the paths are generated while run the test cases
+3. We can see, how the paths are generated while run the test cases
 
 4. Save test case as Json format and run this file next time
 
