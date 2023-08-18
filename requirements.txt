@@ -4,7 +4,7 @@ Faker==0.7.18
 idna==2.5
 ipaddress==1.0.18
 python-dateutil==2.6.1
-requests==2.20.0
+requests==2.31.0
 selenium==3.4.3
 six==1.10.0
 urllib3==1.26.5
