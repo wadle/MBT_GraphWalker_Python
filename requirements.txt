@@ -1,7 +1,7 @@
 certifi==2023.7.22
 chardet==3.0.4
 Faker==0.7.18
-idna==2.5
+idna==3.7
 ipaddress==1.0.18
 python-dateutil==2.6.1
 requests==2.32.0
